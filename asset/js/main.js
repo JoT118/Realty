@@ -34,7 +34,7 @@ window.addEventListener('scroll',function(){
 var slideIndex = 1;
 var bgSlide = document.getElementById('banner-bg');
 var change = function slideBackground(){
-    var newArrayBG = ["url('https://github.com/JoT118/Realty/blob/main/asset/imges/background/banner1.jpg')","url('/Realty/asset/imges/background/banner1.jpg')","url('/Realty/asset/imges/background/banner2.jpg')"];
+    var newArrayBG = ["url('/asset/imges/background/home.jpg')","url('/Realty/asset/imges/background/banner1.jpg')","url('/Realty/asset/imges/background/banner2.jpg')"];
     bgSlide.style.backgroundImage = newArrayBG[slideIndex];
     slideIndex++;
     if(slideIndex>newArrayBG.length-1){
