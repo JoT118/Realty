@@ -34,7 +34,7 @@ window.addEventListener('scroll',function(){
 var slideIndex = 1;
 var bgSlide = document.getElementById('banner-bg');
 var change = function slideBackground(){
-    var newArrayBG = ["url(../imges/background/home.jpg)","url(../imges/background/banner1.jpg)","url(../imges/background/banner2.jpg)"];
+    var newArrayBG = ["url('https://i.pinimg.com/originals/88/3d/65/883d65cb06be4af41ca3cb175040fc54.jpg')","url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')","url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')"];
     bgSlide.style.backgroundImage = newArrayBG[slideIndex];
     slideIndex++;
     if(slideIndex>newArrayBG.length-1){
