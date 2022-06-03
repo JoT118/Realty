@@ -97,6 +97,44 @@ var choiceList = document.querySelector(".search-box-item-choise");
 itemChoice.onclick = ()=>{
     choiceList.classList.toggle('dp-block');
 }
+
+
+// project slide
+$(document).ready(function() {
+    $('.project-items-list').slick({
+        centerMode: true,
+        dots:true,
+        infinite: true,
+        speed: 500,
+        centerPadding:'5rem',
+        slidesToShow:3,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        prevArrow: '<div class="slick-prev"><i class="ti-angle-left" aria-hidden="true"></i></div>',
+        nextArrow: '<div class="slick-next"><i class="ti-angle-right" aria-hidden="true"></i></div>',
+        responsive: [
+            {
+            breakpoint: 1000,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding:'3rem',
+                slidesToShow: 2
+            }
+            },
+            {
+            breakpoint: 700,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding:'2rem',
+                slidesToShow: 1
+            }
+            }
+        ]
+    });
+});    
+
 // slide-new
 $(document).ready(function() {
     $('.new-container').slick({
@@ -136,42 +174,6 @@ $(document).ready(function() {
         ]
     });
 });
-
-// project slide
-$(document).ready(function() {
-    $('.project-items-list').slick({
-        centerMode: true,
-        dots:true,
-        infinite: true,
-        speed: 500,
-        centerPadding:'5rem',
-        slidesToShow:3,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        prevArrow: '<div class="slick-prev"><i class="ti-angle-left" aria-hidden="true"></i></div>',
-        nextArrow: '<div class="slick-next"><i class="ti-angle-right" aria-hidden="true"></i></div>',
-        responsive: [
-            {
-            breakpoint: 1000,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding:'3rem',
-                slidesToShow: 2
-            }
-            },
-            {
-            breakpoint: 700,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding:'2rem',
-                slidesToShow: 1
-            }
-            }
-        ]
-    });
-});    
 
 // about slide
 
